@@ -20,8 +20,8 @@ export default () => {
             description: (
               <>
                 <Address>
-                  <AddressLine>Siddhivinayak apartment flat no. 002 Navghar Ali road sector 16 </AddressLine>
-                  <AddressLine>Ghansoli gaon, Navi Mumbai Maharashtra 400701</AddressLine>
+                  <AddressLine>Siddhivinayak apartment Ground floor 002 Navghar Ali road sector 16 </AddressLine>
+                  <AddressLine>Ghansoli , Navi Mumbai Maharashtra 400701</AddressLine>
                 </Address>
                 {/* <Email></Email> */}
                 <Phone>+91 8607788120</Phone>
@@ -49,7 +49,7 @@ export default () => {
                   <AddressLine> Behind Telco Service Station,</AddressLine>
                   <AddressLine>Rangpuri, N.H.- 8, Mahipal Pur, New Delhi-110037</AddressLine>
                 </Address>
-                {/* <Email>contact@treact.com</Email> */}
+                {/* <Email></Email> */}
                 <Phone>+91 8607788120</Phone>
               </>
             )
@@ -62,7 +62,7 @@ export default () => {
                   <AddressLine>No.-12, 18th Croass , 7th Sector,</AddressLine>
                   <AddressLine>HSR Layout , Bangalore-560068</AddressLine>
                 </Address>
-                {/* <Email>contact@treact.com</Email> */}
+                {/* <Email></Email> */}
                 <Phone>+91 8607788120</Phone>
               </>
             )

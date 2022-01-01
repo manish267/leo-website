@@ -70,9 +70,9 @@ export default () => {
       <NavLink onClick={toggleNavbar} href="#locations">
         Locations
       </NavLink>
-      <NavLink onClick={toggleNavbar} href="#reviews">
+      {/* <NavLink onClick={toggleNavbar} href="#reviews">
         Reviews
-      </NavLink>
+      </NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>
       <PrimaryLink  style={{background:'#FFF',color:'#000'}}> 

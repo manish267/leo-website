@@ -28,10 +28,10 @@ const Heading = tw(
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
-const Statistics = tw.div`flex flex-col justify-between  items-center sm:block text-center md:text-left mt-4 flex-row justify-between`;
-const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
-const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
-const Key = tw.div`font-medium text-primary-700`;
+// const Statistics = tw.div`flex flex-col justify-between  items-center sm:block text-center md:text-left mt-4 flex-row justify-between`;
+// const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
+// const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
+// const Key = tw.div`font-medium text-primary-700`;
 
 // const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
@@ -60,22 +60,22 @@ export default ({
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
   //Change the statistics variable as you like, add or delete objects
-  const defaultStatistics = [
-    {
-      key: "LOCAL SHIFTING",
-      value: "1000+"
-    },
-    {
-      key: "NATIONAL SHIFTING",
-      value: "1400+"
-    },
-    {
-      key: "CAR TRANSPORT",
-      value: "300+"
-    }
-  ];
+  // const defaultStatistics = [
+  //   {
+  //     key: "LOCAL SHIFTING",
+  //     value: "1000+"
+  //   },
+  //   {
+  //     key: "NATIONAL SHIFTING",
+  //     value: "1400+"
+  //   },
+  //   {
+  //     key: "CAR TRANSPORT",
+  //     value: "300+"
+  //   }
+  // ];
 
-  if (!statistics) statistics = defaultStatistics;
+  // if (!statistics) statistics = defaultStatistics;
 
   return (
     <Container>
@@ -90,14 +90,14 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Statistics>
+            {/* <Statistics>
               {statistics.map((statistic, index) => (
                 <Statistic key={index}>
                   <Value>{statistic.value}</Value>
                   <Key>{statistic.key}</Key>
                 </Statistic>
               ))}
-            </Statistics>
+            </Statistics> */}
           
           </TextContent>
         </TextColumn>

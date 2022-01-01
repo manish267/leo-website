@@ -40,7 +40,7 @@ export default () => {
             <Link href="#services">Services</Link>
             <Link href="#about">About Us</Link>
             <Link href="#locations">Locations</Link>
-            <Link href="#reviews">Reviews</Link>
+            {/* <Link href="#reviews">Reviews</Link> */}
           </LinksContainer>
          
           <CopyrightText>

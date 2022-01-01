@@ -7,14 +7,14 @@ import Hero from "components/hero/BackgroundAsImage.js";
 import Features from "components/features/DashedBorderSixFeatures";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
+// import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SingleCol.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 import ContactUs from "pages/ContactUs";
-import image3 from './../images/image-3.jpg'
-import image2 from './../images/image-2.jpg'
-import image1 from './../images/image-1.jpg'
+// import image3 from './../images/image-3.jpg'
+// import image2 from './../images/image-2.jpg'
+// import image1 from './../images/image-1.jpg'
 
 export default () => (
   <AnimationRevealPage disabled>
@@ -22,7 +22,7 @@ export default () => (
     <Features />
     <MainFeature />
     <MainFeature2 />
-    <Testimonial
+    {/* <Testimonial
       subheading="Testimonials"
       heading={
         <>
@@ -31,15 +31,15 @@ export default () => (
       }
       description="Here are what some of our amazing customers are saying about our services. "
       testimonials={[
-        {
-          imageSrc:image3,
-          profileImageSrc:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYII5XP4lObu5UERDyVtgDLzkvzSB9HB1Aw&usqp=CAU",
-          quote:
-            "LED TV, Microwave & complete home furniture transported safely to Pune house.",
-          customerName: "Neha Patil",
-          customerTitle: "Koregaon Park, Pune"
-        },
+        // {
+        //   imageSrc:image3,
+        //   profileImageSrc:
+        //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYII5XP4lObu5UERDyVtgDLzkvzSB9HB1Aw&usqp=CAU",
+        //   quote:
+        //     "LED TV, Microwave & complete home furniture transported safely to Pune house.",
+        //   customerName: "Neha Patil",
+        //   customerTitle: "Koregaon Park, Pune"
+        // },
         {
           imageSrc:image2,
           profileImageSrc:
@@ -60,7 +60,9 @@ export default () => (
         },
       ]}
       textOnLeft={true}
-    />
+    /> */}
+    <ContactUs />
+
     <FAQ
       imageSrc={customerSupportIllustrationSrc}
       imageContain={true}
@@ -73,7 +75,6 @@ export default () => (
       }
     />
    
-    <ContactUs />
     <Footer />
   </AnimationRevealPage>
 );
