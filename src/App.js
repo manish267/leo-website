@@ -84,11 +84,11 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 /* Ready Made Pages (from demos folder) */
 // import EventLandingPage from "demos/EventLandingPage.js";
-import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
+// import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
 import AgencyLandingPage from "demos/AgencyLandingPage.js";
 // import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
-import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
-import ServiceLandingPage from "demos/ServiceLandingPage.js";
+// import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
+// import ServiceLandingPage from "demos/ServiceLandingPage.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 /* Inner Pages */
@@ -101,10 +101,10 @@ import ServiceLandingPage from "demos/ServiceLandingPage.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
-import ContactUs from "pages/ContactUs";
+// import ComponentRenderer from "ComponentRenderer.js";
+// import MainLandingPage from "MainLandingPage.js";
+// import ThankYouPage from "ThankYouPage.js";
+// import ContactUs from "pages/ContactUs";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -116,18 +116,18 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/components/:type/:subtype/:name">
+        {/* <Route path="/components/:type/:subtype/:name">
           <ComponentRenderer />
-        </Route>
-        <Route path="/components/:type/:name">
+        </Route> */}
+        {/* <Route path="/components/:type/:name">
           <ComponentRenderer />
-        </Route>
+        {/* </Route> 
         <Route path="/thank-you">
           <ThankYouPage />
-        </Route>
-        <Route path="/contact-us">
+        </Route> */}
+        {/* <Route path="/contact-us">
           <ContactUs />
-        </Route>
+        </Route> */}
         <Route path="/">
 
           <AgencyLandingPage />
