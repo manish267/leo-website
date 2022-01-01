@@ -2,21 +2,17 @@ import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import Header from "components/headers/light.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
-import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import ContactDetails from "components/cards/ThreeColContactDetails.js";
 
 const Address = tw.span`leading-relaxed`;
 const AddressLine = tw.span`block`;
-const Email = tw.span`text-sm mt-6 block text-gray-500`;
+// const Email = tw.span`text-sm mt-6 block text-gray-500`;
 const Phone = tw.span`text-sm mt-0 block text-gray-500`;
 
 export default () => {
   return (
     <AnimationRevealPage>
-      {/* <Header /> */}
-      {/* <ContactUsForm /> */}
+  
       <ContactDetails 
         cards={[
           {
@@ -24,8 +20,8 @@ export default () => {
             description: (
               <>
                 <Address>
-                  <AddressLine>SidhiVinayak apartment ground floor, Navghar Ali Road,</AddressLine>
-                  <AddressLine>Ghansoli gaon, 400701</AddressLine>
+                  <AddressLine>Siddhivinayak apartment flat no. 002 Navghar Ali road sector 16 </AddressLine>
+                  <AddressLine>Ghansoli gaon, Navi Mumbai Maharashtra 400701</AddressLine>
                 </Address>
                 {/* <Email></Email> */}
                 <Phone>+91 8607788120</Phone>
@@ -79,7 +75,7 @@ export default () => {
                   <AddressLine>Shop NO.- 28, 1st Floor, Maruti Udhyog Gate No.-2,</AddressLine>
                   <AddressLine>Gurgaon, Haryana</AddressLine>
                 </Address>
-                {/* <Email>contact@treact.com</Email> */}
+                {/* <Email></Email> */}
                 <Phone>+91 8607788120</Phone>
               </>
             )
@@ -92,7 +88,7 @@ export default () => {
                   <AddressLine>Shree Arihant building 1st floor, Palam Enclave,</AddressLine>
                   <AddressLine>Near Rangan Plaza, Near Plaza Godawan, Chandigarh</AddressLine>
                 </Address>
-                {/* <Email>contact@treact.com</Email> */}
+                {/* <Email></Email> */}
                 <Phone>+91 8607788120</Phone>
 
               </>
@@ -100,7 +96,6 @@ export default () => {
           }
         ]}
       />
-      {/* <Footer /> */}
     </AnimationRevealPage>
   );
 };

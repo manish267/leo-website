@@ -5,6 +5,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
+import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -42,9 +43,9 @@ const SlantedBackground = styled.span`
   }
 `;
 
-const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
+// const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
 
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
+// const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
 
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 56.25% !important;
@@ -56,18 +57,20 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 `;
 
 export default () => {
+
+  const {toggleNavbar } = useAnimatedNavToggler();
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#services">
+      <NavLink onClick={toggleNavbar} href="#services">
         Services
       </NavLink>
-      <NavLink href="#about">
+      <NavLink onClick={toggleNavbar} href="#about">
         About
       </NavLink>
-      <NavLink href="#locations">
+      <NavLink onClick={toggleNavbar} href="#locations">
         Locations
       </NavLink>
-      <NavLink href="#reviews">
+      <NavLink onClick={toggleNavbar} href="#reviews">
         Reviews
       </NavLink>
     </NavLinks>,
